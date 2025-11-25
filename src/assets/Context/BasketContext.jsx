@@ -75,7 +75,6 @@ export const CartProvider = ({ children }) => {
   }
 
   useEffect(() => {
-    console.log(cart);
     saveCartInLocalStorage(cart);
     allPriceBasket();
   }, [cart]);

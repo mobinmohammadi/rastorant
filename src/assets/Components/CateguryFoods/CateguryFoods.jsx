@@ -148,7 +148,7 @@ export default function CateguryFoods() {
   // ===============================================================
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col container-custom">
       <svg className="hidden">
         <symbol
           id="adjustments-horizontal"
@@ -280,8 +280,8 @@ export default function CateguryFoods() {
         ""
       )}
       <div
-        ref={loaderCategury}
-        className="fixed bg-sky-800 flex items-center justify-center top-0 w-full h-full z-50"
+        // ref={loaderCategury}
+        className="fixed bg-sky-800 right-0 flex items-center justify-center top-0 w-full h-full z-50"
       >
         <span className="loader-categury"></span>
       </div>

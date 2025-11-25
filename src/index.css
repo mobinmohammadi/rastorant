@@ -15,7 +15,10 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-
+.container-custom{
+    width: 1200px;
+    
+}
 .b-b{
     position: relative;
 }

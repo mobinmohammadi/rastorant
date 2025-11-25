@@ -107,7 +107,7 @@ export default function SinglePageRestorant() {
   const [idProductInBasket, setIdProductInBasket] = useState();
 
   return (
-    <div className="">
+    <div className="container-custom">
       <ScrollToTop />
       <Topbar />
       <HeaderRestorant
