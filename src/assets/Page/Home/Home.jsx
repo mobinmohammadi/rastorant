@@ -58,7 +58,7 @@ export default function Home() {
   //     .then((result) => console.log("Data =====>", result));
   // }, []);
   return (
-    <div className="dark:bg-zinc-600 container-custom relative">
+    <div className="dark:bg-zinc-600  relative">
       {/* <UserBasket/> */}
       <Header city={city} />
       <div className="container-custom">

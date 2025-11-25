@@ -107,14 +107,14 @@ export default function SinglePageRestorant() {
   const [idProductInBasket, setIdProductInBasket] = useState();
 
   return (
-    <div className="container-custom">
+    <div>
       <ScrollToTop />
       <Topbar />
       <HeaderRestorant
         dataSingleResturants={dataSingleResturants}
         allComments={allComments}
       />
-      <div className="flex flex-col bg-white justify-between pt-5 pr-4 pl-4 xs:pr-12 xs:pl-12">
+      <div className="flex  flex-col bg-white justify-between pt-5 pr-4 pl-4 xs:pr-12 xs:pl-12">
         <div className="w-[20rem]  ">
           <ul className="flex  & > *:cursor-pointer justify-between pt-5 pr-3 pl-3 pb-3 items-center ">
             <MenuSinglePageRestorant
@@ -142,33 +142,35 @@ export default function SinglePageRestorant() {
           </ul>
         </div>
       </div>
+      <div className="container-custom">
 
-      {statusMenuShow == "resturants-comments" ? (
-        <CommentsSections
-          dataSingleResturants={dataSingleResturants}
-          allComments={allComments}
-        />
-      ) : null}
-      {statusMenuShow == "resturants-menu" ? (
-        <SinglePageRestorantMenu
-          arrayUserBasket={arrayUserBasket}
-          setArrayUserBasket={setArrayUserBasket}
-          idProductInBasket={idProductInBasket}
-          addToBasketUser={addToBasketUser}
-          searchInMenuRestorant={searchInMenuRestorant}
-          handleMenuSingleRestoranst={handleMenuSingleRestoranst}
-          dataSingleResturants={dataSingleResturants}
-        />
-      ) : null}
-      {statusMenuShow == "resturants-infos" ? (
-        <AddressRestorant dataSingleResturants={dataSingleResturants} />
-      ) : null}
+        {statusMenuShow == "resturants-comments" ? (
+          <CommentsSections
+            dataSingleResturants={dataSingleResturants}
+            allComments={allComments}
+          />
+        ) : null}
+        {statusMenuShow == "resturants-menu" ? (
+          <SinglePageRestorantMenu
+            arrayUserBasket={arrayUserBasket}
+            setArrayUserBasket={setArrayUserBasket}
+            idProductInBasket={idProductInBasket}
+            addToBasketUser={addToBasketUser}
+            searchInMenuRestorant={searchInMenuRestorant}
+            handleMenuSingleRestoranst={handleMenuSingleRestoranst}
+            dataSingleResturants={dataSingleResturants}
+          />
+        ) : null}
+        {statusMenuShow == "resturants-infos" ? (
+          <AddressRestorant dataSingleResturants={dataSingleResturants} />
+        ) : null}
 
+      </div>
       <div className="mt-2">
         <Toaster position="top-center" />
         <FooterMobile />
       </div>
-      <div ref={loaderCategury} className="fixed bg-sky-800 flex items-center justify-center top-0 w-full h-full z-50">
+      <div ref={loaderCategury} className="fixed bg-sky-800 flex items-center justify-center right-0 top-0 w-full h-full z-50">
         <span className="loader-categury"></span>
       </div>
     </div>

@@ -280,7 +280,7 @@ export default function CateguryFoods() {
         ""
       )}
       <div
-        // ref={loaderCategury}
+        ref={loaderCategury}
         className="fixed bg-sky-800 right-0 flex items-center justify-center top-0 w-full h-full z-50"
       >
         <span className="loader-categury"></span>

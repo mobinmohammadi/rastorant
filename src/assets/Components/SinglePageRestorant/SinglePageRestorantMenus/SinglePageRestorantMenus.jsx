@@ -51,7 +51,7 @@ export default function SinglePageRestorantMenu({
          <div
                 className={` ${
                   isActiveCateguryFoods ? "opacity-100 visible z-20  top-12 sm:top-14 fixed flex transition-all" : "opacity-0 invisible hidden "
-                } w-full shadow-2xs`}
+                } w-full shadow-2xs pt-4`}
               >
                 <div className=" flex w-full border-solid shadow-2xl    items-center justify-center pt-3 bg-white">
                   <div className="  mx-auto flex items-center  overflow-x-scroll hide-scrollbar justify-center gap-14">
