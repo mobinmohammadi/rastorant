@@ -7,7 +7,7 @@
 .container-footer_and__topBar {
   max-width: 1250px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto!important;
   margin-left: 0;
 }
 /* padding: 12px 24px 16px 12px */
